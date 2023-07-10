@@ -1,0 +1,91 @@
+:root{
+    background-color: #011222e0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 1em;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+}
+ul li a:hover {
+    background-color: #d95397;
+    color: black;
+}
+ul li a .contact {
+    border: 1px solid white;
+}
+
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: linear-gradient(to right,  #011222e0, #d95397);
+    color: white;
+}
+.nav .slam-left {
+    margin-right: auto;
+}
+
+.nav .slam-left a {
+    color: #fff;
+}
+
+.cart{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.countItems{
+    font-size: 13px;
+    position: absolute;
+    top: 10px;
+    background: #84fefc;
+    border-radius: 50%;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 1px;
+    color: black;
+}
+
+
+@media all and (max-width: 500px) {
+    ul {
+        padding: 0;
+   }
+    ul li {
+        width: 100%;
+   }
+    ul li a {
+        display: block;
+        text-align: center;
+   }
+    .nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+   }
+    .nav .slam-left {
+        margin-right: 0;
+   }
+}
